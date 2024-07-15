@@ -13,3 +13,10 @@ The Personal Finance Tracker is a Python-based application designed to help you 
 **Detailed Reports:** Create detailed reports to analyze your financial status.
 
 **User-friendly Interface:** Easy-to-use interface for managing financial data.
+
+## **Technologies Used**
+**Python**
+
+**Pandas** - Data manipulation and analysis
+
+**Matplotlib** - Data visualization
