@@ -1,6 +1,7 @@
 import pandas as pd 
 import csv
 from datetime import datetime 
+from data_entry import get_amount, get_category, get_date, get_description, get_payment_type
 
 class CSV:
     CSV_FILE = "Finance_data.csv"
@@ -17,13 +18,13 @@ class CSV:
 #creating a new dictionary which takes all the data 
     
     @classmethod 
-    def add_entry(cls,Date,Amount,Category,Payment_type,Description):
+    def add_entry(cls,date,amount,category,payment_type,description):
         new_entry = {
-            "Date": Date,
-            "Amount": Amount,
-            "Category": Category,
-            "Payment_type": Payment_type,
-            "Description": Description
+            "Date": date,
+            "Amount": amount,
+            "Category": category,
+            "Payment_type": payment_type,
+            "Description": description
         }
 #opening a CSV file in append mode 
 #it will append the data directly and ensure closing of file with context manager
@@ -33,7 +34,15 @@ class CSV:
             writer.writerow(new_entry)
         print("Your Entry Is Added Successfully")
         
+
+def add():
+    CSV.initialize_csv()
+    date = get_date("enter the date of the transaction in the format (dd-mm-yyyy) or enter the present date: ", allow_default= True )
+    amount = get_amount()
+    category = get_category()
+    description = get_description()
+    payment_type = get_payment_type()
+    CSV.add_entry(date, amount, category, description, payment_type)
     
-            
-CSV.initialize_csv()
-CSV.add_entry("01-06-2024","500","expense","UPI","Swiggy food")
+add()
+        
