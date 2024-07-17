@@ -6,7 +6,7 @@ from data_entry import get_amount, get_category, get_date, get_description, get_
 class CSV:
     CSV_FILE = "Finance_data.csv"
     COLUMNS = ["Date", "Amount", "Category", "Payment_type", "Description"]
-    
+    FORMAT = "%d-%m-%Y"
     @classmethod #this will have access to the class itself but it won't have access to its instance of the class
     def initialize_csv(cls):
         try:
@@ -34,6 +34,29 @@ class CSV:
             writer.writerow(new_entry)
         print("Your Entry Is Added Successfully")
         
+    @classmethod
+    def get_transactions(cls, start_date, end_date):
+        df = pd.read_csv(cls.CSV_FILE)
+        df["date"] = pd.to_datetime(df["date"], format=CSV.FORMAT)
+        start_date = datetime.strptime(start_date, CSV.FORMAT)
+        end_date = datetime.strptime(end_date, CSV.FORMAT)
+        
+        mask = (df["date"] >= start_date) & (df["date"] <= end_date)  
+        #(&) is only being used when working with pandas or mask specifically
+        filtered_df = df.loc[mask]
+        #this will return a filtered dataframe that only contains the row when the above condition is true
+        
+        if filtered_df.empty:
+            print("no ytransactions found in the given date")
+        else:
+            print(
+            f"Transactions from {start_date.strftime(CSV.FORMAT)} to {end_date.strftime(CSV.FORMAT)}"
+            )
+            print(filtered_df.to_string(
+                index=False, formatters={"date": lambda x: x.strftime(CSV.FORMAT)}
+                )
+            )
+            
 
 def add():
     CSV.initialize_csv()
