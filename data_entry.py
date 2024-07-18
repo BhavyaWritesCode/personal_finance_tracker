@@ -13,7 +13,7 @@ def get_date(prompt, allow_default = False):
         return datetime.today().strftime(date_format)
     
     try:
-        valid_date = datetime.strptim(date_str, date_format)
+        valid_date = datetime.strptime(date_str, date_format)
         return valid_date.strftime(date_format)
     except ValueError:
         print("Invalid date format. please enter the correct format   ")
