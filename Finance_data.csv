@@ -1,7 +1,41 @@
 Date,Amount,Category,Payment_type,Description
-01-06-2024,500,expense,UPI,Swiggy food
-17-07-2024,3000.0,Expense,college exam fees,UPI
-17-07-2024,500.0,Expense,given to friend,UPI
-19-07-2024,5400.0,Income,UPI,recieved money
-18-07-2024,250.0,Expense,UPI,Swiggy food
-19-07-2024,500.0,Expense,UPI,Netflix
+01-06-2024,500,Expense,UPI,Swiggy food
+02-06-2024,1000.0,Expense,Cash,Grocery shopping
+03-06-2024,800.0,Expense,UPI,Book purchase
+04-06-2024,1500.0,Expense,Cash,Clothes shopping
+05-06-2024,300.0,Expense,UPI,Online subscription
+06-06-2024,200.0,Expense,Cash,Stationery
+07-06-2024,400.0,Expense,Cash,Pet food
+08-06-2024,600.0,Expense,UPI,Electricity bill
+09-06-2024,1200.0,Expense,UPI,Electricity bill
+10-06-2024,900.0,Expense,UPI,Restaurant dinner
+11-06-2024,5000.0,Income,UPI,Gift money
+12-06-2024,350.0,Expense,UPI,Cafe coffee
+13-06-2024,5400.0,Income,UPI,Received money
+14-06-2024,500.0,Expense,UPI,Netflix
+15-06-2024,250.0,Expense,UPI,Swiggy food
+16-06-2024,7000.0,Income,UPI,Salary
+17-06-2024,1500.0,Expense,Cash,Clothes shopping
+18-06-2024,2000.0,Income,Cash,Freelance work
+19-06-2024,1000.0,Expense,Cash,Grocery shopping
+20-06-2024,600.0,Expense,UPI,Electricity bill
+21-06-2024,4500.0,Income,Cash,Freelance work
+22-06-2024,500.0,Expense,UPI,Netflix
+23-06-2024,3000.0,Expense,UPI,Random shopping
+24-06-2024,800.0,Expense,UPI,Book purchase
+25-06-2024,250.0,Expense,UPI,Swiggy food
+26-06-2024,700.0,Expense,Cash,Stationery
+27-06-2024,1500.0,Expense,Cash,Clothes shopping
+28-06-2024,300.0,Expense,UPI,Online subscription
+29-06-2024,600.0,Expense,UPI,Electricity bill
+30-06-2024,1000.0,Expense,Cash,Grocery shopping
+01-07-2024,500,Expense,UPI,Swiggy food
+02-07-2024,1200.0,Expense,UPI,Electricity bill
+03-07-2024,900.0,Expense,UPI,Restaurant dinner
+04-07-2024,5400.0,Income,UPI,Received money
+05-07-2024,500.0,Expense,UPI,Netflix
+06-07-2024,350.0,Expense,UPI,Cafe coffee
+07-07-2024,1000.0,Expense,Cash,Grocery shopping
+08-07-2024,250.0,Expense,UPI,Swiggy food
+09-07-2024,800.0,Expense,UPI,Book purchase
+10-07-2024,4500.0,Income,Cash,Freelance work
